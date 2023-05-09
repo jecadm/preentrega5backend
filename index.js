@@ -150,6 +150,7 @@ res.status(404).json({ error: 'Carrito no encontrado' });
 }
 });
 
+
 // Ruta POST / para crear un nuevo carrito
 cartsRouter.post('/', (req, res) => {
 const carts = JSON.parse(fs.readFileSync(cartsFilePath));
